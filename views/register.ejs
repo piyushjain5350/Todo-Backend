@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        body{
+            background-color: rgb(199, 216, 182);
+            width: 100vw;
+            height: 100vh;
+        }
+        .bodyHtml{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:40px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .formArea{
+            display: flex;
+            background-color:white;
+            padding: 20px 10px;
+            width: 500px;
+            border-radius: 10px;
+        }
+        input{
+            border: none;
+            outline: none;
+            width: 350px;
+        }
+        .formVal{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+        }
+        button {   
+            background-color: #b1d8b2;   
+            width: 100%;  
+            color: black;   
+            padding: 5px;   
+            margin-bottom: 10px;   
+            border: none;   
+            cursor: pointer;  
+            border-radius: 4px;
+         }   
+         .inp{
+            border: 1px solid grey;
+            padding: 5px;
+            width:480px;
+         }
+    </style>
+</head>
+<body>
+    <div class="bodyHtml">
+        <h1>REGISTER PAGE</h1>
+    
+        <div class="formArea"> 
+            <form action="/register" method="post">
+                <div class="formVal">
+                    <div class="inp">
+                        <label for="name">Name : </label>   
+                        <input type="text" placeholder="Enter Name" name="name" required> 
+                    </div>
+                    <div class="inp">
+                        <label for="email">Email    : </label>  
+                        <input type="email" placeholder="Enter Email" name="email" required>
+                    </div> 
+                    <div class="inp">
+                        <label for="username">Username : </label>    
+                        <input type="text" placeholder="Enter Username" name="username" required>
+                    </div>
+                    <div class="inp">
+                        <label for="password">Password : </label>   
+                        <input type="password" placeholder="Enter Password" name="password" required>
+                    </div>  
+                    <div class="inp">
+                        <label for="cnfpassword"> Cnf Password : </label>   
+                        <input type="password" placeholder="Enter Password" name="cnfPassword" required>
+                    </div>  
+                    <button type="submit">Register</button>   
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
